@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageViewImportant"
@@ -34,30 +34,20 @@
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageViewTodo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:text="TextView"
-        android:textSize="36sp" />
-
-    <TextView
-        android:id="@+id/txtDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtTitle"
-        android:layout_marginTop="75dp"
-        android:layout_toStartOf="@+id/BtnOK"
-        android:height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageViewImportant"
+        android:height="50dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
         android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/BtnOK"
+    <TextView
+        android:id="@+id/txtDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/ok_button" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtTitle"
+        android:ems="10"
+        android:inputType="textMultiLine" />
 </RelativeLayout>
